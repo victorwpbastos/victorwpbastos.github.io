@@ -1,0 +1,65 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+h1::first-letter {
+	padding-left: 0.3em;
+	border-left: solid 3px tomato;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.title {
+	font-family: monospace;
+	font-size: 3em;
+}
+
+.title,
+.title:hover,
+.title:active,
+.title:visited,
+.title:focus {
+	color: inherit;
+	text-decoration: none;
+}
+
+.subtitle {
+	font-family: monospace;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.red-box {
+	padding: 0.3em 0.5em;
+	background: tomato;
+	color: #ffffff;
+}
+
+/* .post-list {
+	padding-left: 0 !important;
+	list-style-type: none;
+} */
+
+.post-list p::before {
+	/* content: '\25AA'; */
+	content: '>';
+	color: tomato;
+	width: 1em;
+	margin-right: 0.5em;
+	font-weight: bold;
+}
+
+/* .post-list li {
+	font-size: 1.2em;
+	margin: 1.5em 0;
+} */
+
+.post-list p a {
+	color: inherit;
+}
