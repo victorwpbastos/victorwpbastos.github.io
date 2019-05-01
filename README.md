@@ -1,2 +1,1 @@
-# victorwpbastos.github.io
-My Awesome Blog
+# Victor Bastos' Blog

@@ -1,6 +1,111 @@
-@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('./normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Anton|Montserrat|PT+Serif');
 
-h1 {
+/* general rules */
+body {
+	color: #303030;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+	padding: 1em;
+}
+
+a {
+	color: firebrick;
+}
+
+/* logo */
+.logo-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+	.logo-nav {
+		align-items: center;
+	}
+}
+
+.logo-nav .logo-title {
+	font-size: 2.5em;
+	font-family: 'Anton', sans-serif;
+	text-decoration: none;
+	color: firebrick;
+}
+
+.logo-nav .logo-subtitle {
+	font-family: monospace;
+	font-size: 1em;
+	background: firebrick;
+	color: #ffffff;
+	padding: 0.5em 0.8em;
+	font-weight: bold;
+}
+
+/* post */
+.post {
+	margin-top: 3em;
+}
+
+.post h1,
+.post h2 {
+	font-family: 'PT Serif', serif;
+	line-height: 1.5em;
+}
+
+.post .post-list {
+	padding-left: 1em;
+	list-style: square;
+}
+
+.post .post-list li {
+	margin-bottom: 1.5em;
+}
+
+.post .post-list a {
+	font-family: 'PT Serif', serif;
+	font-size: 1.5em;
+	color: inherit;
+	line-height: 1.5em;
+}
+
+/* .post .post-list p:before {
+	content: '> ';
+	font-family: 'PT Serif', serif;
+	font-size: 1.5em;
+	color: firebrick;
+	font-weight: bold;
+	margin-right: 0.3em;
+} */
+
+.post .post-content {
+	line-height: 1.5em;
+}
+
+.post .post-footer {
+	margin-top: 2em;
+}
+
+.post .post-footer .post-date span {
+	font-weight: bold;
+}
+
+.post .post-tag {
+	background: firebrick;
+	padding: 0.3em 0.5em;
+	margin-right: 0.5em;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: monospace;
+	font-size: 1em;
+}
+
+/* h1 {
 	font-size: 1.5em;
 	margin-bottom: 1em;
 	font-weight: bold;
@@ -9,6 +114,11 @@ h1 {
 h1::first-letter {
 	padding-left: 0.3em;
 	border-left: solid 3px tomato;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin: 1em 0;
 }
 
 p {
@@ -39,27 +149,32 @@ p {
 	padding: 0.3em 0.5em;
 	background: tomato;
 	color: #ffffff;
-}
-
-/* .post-list {
-	padding-left: 0 !important;
-	list-style-type: none;
 } */
 
-.post-list p::before {
-	/* content: '\25AA'; */
+/* .post-list p::before {
 	content: '>';
 	color: tomato;
 	width: 1em;
 	margin-right: 0.5em;
 	font-weight: bold;
-}
-
-/* .post-list li {
-	font-size: 1.2em;
-	margin: 1.5em 0;
 } */
 
-.post-list p a {
+/* .post-list p a {
 	color: inherit;
 }
+
+.post-tag {
+	margin-right: 0.5em;
+	background: tomato;
+	padding: 0.3em 0.5em;
+	border-radius: 4px;
+	color: #ffffff;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+.post-tag:active,
+.post-tag:focus,
+.post-tag:hover {
+	color: #ffffff;
+} */

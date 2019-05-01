@@ -1,0 +1,16 @@
+{
+	"name": "victorbastos-blog",
+	"version": "1.0.0",
+	"description": "Victor Bastos' blog",
+	"scripts": {
+		"build": "node ./build/index.js"
+	},
+	"author": "Victor Bastos <victorwpbastos@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"front-matter": "^3.0.2",
+		"fs-extra": "^7.0.1",
+		"klaw-sync": "^6.0.0",
+		"markdown-it": "^8.4.2"
+	}
+}
